@@ -1,0 +1,113 @@
+/* ── PRICING ── */
+
+.pricing {
+  background: var(--warm);
+  text-align: center;
+}
+
+.pricing-intro {
+  max-width: 780px;
+  font-size: 1.05rem;
+  line-height: 1.85;
+  color: var(--soft);
+  margin: 0 auto 52px;
+  text-align: center;
+}
+
+.pricing-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 22px;
+  margin-bottom: 36px;
+}
+
+.price-card {
+  flex: 1 1 210px;
+  max-width: 340px;
+}
+
+.price-card {
+  background: var(--card-bg);
+  border-radius: 22px;
+  padding: 30px 24px 28px;
+  text-align: center;
+  box-shadow: 0 4px 22px rgba(232, 160, 176, 0.10);
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.25s;
+}
+
+.price-card:hover {
+  transform: translateY(-4px);
+}
+
+/* Coloured top bar */
+.price-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+}
+
+.price-card.green::before { background: var(--green); }
+.price-card.pink::before  { background: var(--pink); }
+.price-card.blue::before  { background: var(--blue); }
+
+.price-emoji {
+  font-size: 2.2rem;
+  margin-bottom: 12px;
+}
+
+.price-label {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--text);
+  margin-bottom: 10px;
+}
+.price-label2 {
+  font-weight: 600;
+  font-size: 0.8rem;
+  color: var(--text);
+  margin-bottom: 10px;
+}
+
+.price-amount {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+  color: var(--text);
+}
+
+.price-amount span {
+  font-size: 1rem;
+  font-family: 'Nunito', sans-serif;
+  color: var(--soft);
+}
+
+/* Add-on pills */
+.price-addons {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.addon-pill {
+  background: var(--card-bg);
+  border-radius: 50px;
+  padding: 14px 28px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  box-shadow: 0 3px 14px rgba(143, 188, 143, 0.12);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.addon-pill .addon-price {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.3rem;
+  color: var(--green);
+}
