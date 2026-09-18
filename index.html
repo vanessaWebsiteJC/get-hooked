@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/base.css" />
   <link rel="stylesheet" href="css/hero.css" />
   <link rel="stylesheet" href="css/about.css" />
+  <link rel="stylesheet" href="css/filters.css" />
   <link rel="stylesheet" href="css/creations.css" />
   <link rel="stylesheet" href="css/pricing.css" />
   <link rel="stylesheet" href="css/givingBack.css" />
@@ -52,460 +53,63 @@
   <section class="creations" id="creations">
     <p class="section-label">My Work</p>
     <h2 class="section-title">Crocheted Creations</h2>
-    <p class="creations-subtitle">
-      Browse some of my recent creations! Click the dots to see different angles and details of each piece.
-    </p>
     
-    <div class="animal-gallery reveal" id="animalGallery">
- 
-        <!-- VELVET BUNNIES -->
-        <div class="animal-card">
-          <div class="animal-img-area">
-            <img src="images/velvetBunnies/all.jpeg" alt="Velvet bunny all" class="active" />
-            <img src="images/velvetBunnies/Front.jpeg" alt="Velvet bunny blue & pink" />
-            <img src="images/velvetBunnies/yellow.jpeg" alt="Velvet bunny yellow" />
-            <img src="images/velvetBunnies/Side.jpeg" alt="Velvet bunny side" />
-            <img src="images/velvetBunnies/Closeup.jpeg" alt="Velvet bunny closeup" />
-            <img src="images/velvetBunnies/Lined.jpeg"/>
-            <img src="images/velvetBunnies/Ear.jpeg"/>
- 
-            <div class="animal-dots">
-              <div class="animal-dot active" data-idx="0"></div>
-              <div class="animal-dot" data-idx="1"></div>
-              <div class="animal-dot" data-idx="2"></div>
-              <div class="animal-dot" data-idx="3"></div>
-              <div class="animal-dot" data-idx="4"></div>
-              <div class="animal-dot" data-idx="5"></div>
-              <div class="animal-dot" data-idx="6"></div>
-            </div>
-          </div>
-          <div class="animal-name">🐰 Velvet Bunnies</div>
-          <div class="animal-desc">Medium Velvet Yarn, Non-weighted</div>
+    <div class="creation-filters">
+      <div class="filter-group">
+        <span class="filter-label">Yarn</span>
+        <div class="filter-buttons" id="yarnFilters">
+          <button class="filter-btn active" data-filter="all">
+            All
+          </button>
+          <button class="filter-btn" data-filter="velvet">
+            Velvet
+          </button>
+          <button class="filter-btn" data-filter="basic">
+            Basic
+          </button>
+          <button class="filter-btn" data-filter="fluffy">
+            Fluffy
+          </button>
         </div>
-        
-        <!-- VELVET BEAR -->
-        <div class="animal-card">
-          <div class="animal-img-area">
-            <img src="images/VelvetBear/front.jpeg" class="active" />
-            <img src="images/VelvetBear/left.jpeg" />
-            <img src="images/VelvetBear/right.jpeg" />
-            <img src="images/VelvetBear/back.jpeg" />
-        
-            <div class="animal-dots">
-              <div class="animal-dot active" data-idx="0"></div>
-              <div class="animal-dot" data-idx="1"></div>
-              <div class="animal-dot" data-idx="2"></div>
-              <div class="animal-dot" data-idx="3"></div>
-            </div>
-          </div>
-        
-          <div class="animal-name">🐻 Velvet Bear</div>
-          <div class="animal-desc">Medium Velvet Yarn, Non-Weighted</div>
+      </div>
+      <div class="filter-group">
+        <span class="filter-label">Collection</span>
+        <div class="filter-buttons" id="collectionFilters">
+          <button class="filter-btn active" data-filter="all">
+            All
+          </button>
+          <button class="filter-btn" data-filter="animals">
+            Animals
+          </button>
+          <button class="filter-btn" data-filter="seasonal">
+            Seasonal
+          </button>
+          <button class="filter-btn" data-filter="other">
+            Other
+          </button>
         </div>
+      </div>
+    </div>
 
-        <!-- GOLF CLUB COVERS -->
-        <div class="animal-card">
-          <div class="animal-img-area">
-            <img src="images/Golf Club Covers/clubs.jpeg" alt="Reindeer front" class="active" />
-            <img src="images/Golf Club Covers/oakley.jpeg" alt="Reindeer left side" />
-            <img src="images/Golf Club Covers/otter.jpeg" alt="Reindeer right side" />
-            <img src="images/Golf Club Covers/dogFront.jpeg" alt="Reindeer back" />
-            <img src="images/Golf Club Covers/dogLeft.jpeg" alt="Reindeer back" />
-            <img src="images/Golf Club Covers/dogRight.jpeg" alt="Reindeer back" />
- 
-            <div class="animal-dots">
-              <div class="animal-dot active" data-idx="0"></div>
-              <div class="animal-dot" data-idx="1"></div>
-              <div class="animal-dot" data-idx="2"></div>
-              <div class="animal-dot" data-idx="3"></div>
-              <div class="animal-dot" data-idx="4"></div>
-              <div class="animal-dot" data-idx="5"></div>
-            </div>
-          </div>
-          <div class="animal-name">⛳️ Club Covers</div>
-          <div class="animal-desc">Custom Basic Yarn</div>
-        </div>
- 
-        <!-- TURTLE -->
-        <div class="animal-card">
-          <div class="animal-img-area">
-            <img src="images/Turtle/two.jpeg" alt="Two turtles" class="active"/>
-            <img src="images/Turtle/brown.jpeg"/>
-            <img src="images/Turtle/green.jpeg"/>
-            <img src="images/Turtle/close.jpeg"/>
-            <div class="animal-dots">
-              <div class="animal-dot active" data-idx="0"></div>
-              <div class="animal-dot" data-idx="1"></div>
-              <div class="animal-dot" data-idx="2"></div>
-              <div class="animal-dot" data-idx="3"></div>
-            </div>
-          </div>
-          <div class="animal-name">🐢 Turtle</div>
-          <div class="animal-desc">Medium Velvet Yarn, Non-weighted</div>
-        </div>
- 
-        <!-- FLUFFY BEAR -->
-        <div class="animal-card">
-          <div class="animal-img-area">
-            <img src="images/FluffyBear/Front.jpeg" class="active" />
-            <img src="images/FluffyBear/Left.jpeg" />
-            <img src="images/FluffyBear/Right.jpeg" />
-            <img src="images/FluffyBear/Face.jpeg" />
-            <img src="images/FluffyBear/Foot.jpeg" />
- 
-            <div class="animal-dots">
-              <div class="animal-dot active" data-idx="0"></div>
-              <div class="animal-dot" data-idx="1"></div>
-              <div class="animal-dot" data-idx="2"></div>
-              <div class="animal-dot" data-idx="3"></div>
-              <div class="animal-dot" data-idx="4"></div>
-            </div>
-          </div>
-          <div class="animal-name">🧸 Fluffy Bear</div>
-          <div class="animal-desc">Medium Fluffy Yarn, Weighted</div>
-        </div>
- 
-        <!-- MERMAID -->
-        <div class="animal-card">
-          <div class="animal-img-area">
-            <img src="images/Mermaid/front.jpeg" class="active" />
-            <img src="images/Mermaid/side.jpeg" />
-            <img src="images/Mermaid/back.jpeg" />
-            <img src="images/Mermaid/laying.jpeg" />
-            <img src="images/Mermaid/fish.jpeg" />
- 
-            <div class="animal-dots">
-              <div class="animal-dot active" data-idx="0"></div>
-              <div class="animal-dot" data-idx="1"></div>
-              <div class="animal-dot" data-idx="2"></div>
-              <div class="animal-dot" data-idx="3"></div>
-              <div class="animal-dot" data-idx="4"></div>
-            </div>
-          </div>
-          <div class="animal-name">🧜‍♀️ Mermaid</div>
-          <div class="animal-desc">Medium Basic Yarn, Non-weighted</div>
-        </div>
-        
-        <!-- BUNNY -->
-        <div class="animal-card">
-          <div class="animal-img-area">
-            <img src="images/Bunny/Front.jpeg" class="active" />
-            <img src="images/Bunny/Left.jpeg" />
-            <img src="images/Bunny/Right.jpeg" />
-            <img src="images/Bunny/Flowers.jpeg" />
-            <img src="images/Bunny/Bow.jpeg" />
-            <img src="images/Bunny/Closeup.jpeg" />
-            <img src="images/Bunny/2Front.jpeg" />
-            <img src="images/Bunny/2Back.jpeg" />
-        
-            <div class="animal-dots">
-              <div class="animal-dot active" data-idx="0"></div>
-              <div class="animal-dot" data-idx="1"></div>
-              <div class="animal-dot" data-idx="2"></div>
-              <div class="animal-dot" data-idx="3"></div>
-              <div class="animal-dot" data-idx="4"></div>
-              <div class="animal-dot" data-idx="5"></div>
-              <div class="animal-dot" data-idx="6"></div>
-              <div class="animal-dot" data-idx="7"></div>
-            </div>
-          </div>
-          <div class="animal-name">🐇 Bunny</div>
-          <div class="animal-desc">Medium Basic Yarn, Weighted</div>
-        </div>
- 
-        <!-- FLOWERS -->
-        <div class="animal-card">
-          <div class="animal-img-area">
- 
-            <img src="images/Flowers/Boquet.jpeg" class="active" />
-            <img src="images/Flowers/BigRose.jpeg" />
-            <img src="images/Flowers/HoneySuckle.jpeg" />
-            <img src="images/Flowers/Lily&Baby.jpeg" />
-            <img src="images/Flowers/Lily.jpeg" />
-            <img src="images/Flowers/Orchid.jpeg" />
-            <img src="images/Flowers/PinkRose.jpeg" />
-            <img src="images/Flowers/White.jpeg" />
- 
-            <div class="animal-dots">
-              <div class="animal-dot active" data-idx="0"></div>
-              <div class="animal-dot" data-idx="1"></div>
-              <div class="animal-dot" data-idx="2"></div>
-              <div class="animal-dot" data-idx="3"></div>
-              <div class="animal-dot" data-idx="4"></div>
-              <div class="animal-dot" data-idx="5"></div>
-              <div class="animal-dot" data-idx="6"></div>
-              <div class="animal-dot" data-idx="7"></div>
-            </div>
-          </div>
-          <div class="animal-name">🌸 Flowers</div>
-        </div>
- 
-        <!-- LION -->
-        <div class="animal-card">
-          <div class="animal-img-area">
-            <img src="images/Lion/front.jpeg"class="active" />
-            <img src="images/Lion/left.jpeg" />
-            <img src="images/Lion/right.jpeg" />
-            <img src="images/Lion/back.jpeg" />
- 
-            <div class="animal-dots">
-              <div class="animal-dot active" data-idx="0"></div>
-              <div class="animal-dot" data-idx="1"></div>
-              <div class="animal-dot" data-idx="2"></div>
-              <div class="animal-dot" data-idx="3"></div>
-            </div>
-          </div>
-          <div class="animal-name">🦁 Lion</div>
-          <div class="animal-desc">Medium Basic Yarn, Weighted</div>
-        </div>
- 
-        <!-- HIPPO -->
-        <div class="animal-card">
-          <div class="animal-img-area">
-            <img src="images/Hippo/Front.jpeg" alt="Hippo front" class="active" />
-            <img src="images/Hippo/Left.jpeg" alt="Hippo left side" />
-            <img src="images/Hippo/Right.jpeg" alt="Hippo right side" />
-            <img src="images/Hippo/Back.jpeg" alt="Hippo back" />
- 
-            <div class="animal-dots">
-              <div class="animal-dot active" data-idx="0"></div>
-              <div class="animal-dot" data-idx="1"></div>
-              <div class="animal-dot" data-idx="2"></div>
-              <div class="animal-dot" data-idx="3"></div>
-            </div>
-          </div>
-          <div class="animal-name">🦛 Hippo</div>
-          <div class="animal-desc">Medium Basic Yarn, Weighted</div>
-        </div>
- 
-        <!-- BEAR -->
-        <div class="animal-card">
-          <div class="animal-img-area">
-            <img src="images/Bear/front.jpeg" alt="Bear front" class="active" />
-            <img src="images/Bear/left.jpeg" alt="Bear left side" />
-            <img src="images/Bear/right.jpeg" alt="Bear right side" />
-            <div class="animal-dots">
-              <div class="animal-dot active" data-idx="0"></div>
-              <div class="animal-dot" data-idx="1"></div>
-              <div class="animal-dot" data-idx="2"></div>
-            </div>
-          </div>
-          <div class="animal-name">🐻 Bear</div>
-          <div class="animal-desc">Medium Basic Yarn, weighted</div>
-        </div>
- 
-        <!-- HORSE -->
-        <div class="animal-card">
-          <div class="animal-img-area">
-            <img src="images/Horse/Front.jpeg" alt="Horse front" class="active" />
-            <img src="images/Horse/Left.jpeg" alt="Horse left side" />
-            <div class="animal-dots">
-              <div class="animal-dot active" data-idx="0"></div>
-              <div class="animal-dot" data-idx="1"></div>
-            </div>
-          </div>
-          <div class="animal-name">🐴 Horse</div>
-          <div class="animal-desc">Medium Basic Yarn, weighted</div>
-        </div>
+    <div
+      class="animal-gallery reveal"
+      id="animalGallery">
+    </div>
 
-        <!-- GIRAFFE & CAT -->
-        <div class="animal-card">
-          <div class="animal-img-area">
-            <img src="images/giraffe&cat/front.jpeg" class="active"/>
-            <img src="images/giraffe&cat/left.jpeg"/>
-            <img src="images/giraffe&cat/back.jpeg"/>
-            <img src="images/giraffe&cat/cat.jpeg"/>
-            <img src="images/giraffe&cat/giraffe.jpeg"/>
-            <div class="animal-dots">
-              <div class="animal-dot active" data-idx="0"></div>
-              <div class="animal-dot" data-idx="1"></div>
-              <div class="animal-dot" data-idx="2"></div>
-              <div class="animal-dot" data-idx="3"></div>
-              <div class="animal-dot" data-idx="4"></div>
-            </div>
-          </div>
-          <div class="animal-name">🦒🐱 Giraffe & Cat</div>
-          <div class="animal-desc">Medium Basic Yarn, weighted</div>
-        </div>
- 
-        <!-- DOG -->
-        <div class="animal-card">
-          <div class="animal-img-area">
-            <img src="images/Dog/front.jpeg" class="active"/>
-            <img src="images/Dog/left.jpeg"/>
-            <img src="images/Dog/right.jpeg"/>
-            <img src="images/Dog/fluffyRight.jpeg"/>
-            <img src="images/Dog/fluffyLeft.jpeg"/>
- 
-            <div class="animal-dots">
-              <div class="animal-dot active" data-idx="0"></div>
-              <div class="animal-dot" data-idx="1"></div>
-              <div class="animal-dot" data-idx="2"></div>
-              <div class="animal-dot" data-idx="3"></div>
-              <div class="animal-dot" data-idx="4"></div>
-            </div>
-          </div>
-          <div class="animal-name"> 🐶 Dog </div>
-          <div class="animal-desc">Medium fluffy Yarn, weighted</div>
-        </div>
+    <!-- SHOW MORE -->
+    <button
+      class="show-more-btn"
+      id="showMoreBtn">
+      Show More Creations
+    </button>
 
-        <!-- LAMB -->
-        <div class="animal-card">
-          <div class="animal-img-area">
-            <img src="images/Lamb/front.jpeg" class="active"/>
-            <img src="images/Lamb/left.jpeg"/>
-            <img src="images/Lamb/right.jpeg"/>
-            <img src="images/Lamb/back.jpeg"/>
- 
-            <div class="animal-dots">
-              <div class="animal-dot active" data-idx="0"></div>
-              <div class="animal-dot" data-idx="1"></div>
-              <div class="animal-dot" data-idx="2"></div>
-              <div class="animal-dot" data-idx="3"></div>
-            </div>
-          </div>
-          <div class="animal-name">🐑 Lamb </div>
-          <div class="animal-desc">Medium Velvet Yarn, weighted</div>
-        </div>
-
-        <!-- DEER -->
-        <div class="animal-card">
-          <div class="animal-img-area">
-            <img src="images/Deer/front.jpeg" class="active"/>
-            <img src="images/Deer/face.jpeg"/>
-            <img src="images/Deer/left.jpeg"/>
-            <img src="images/Deer/right.jpeg"/>
-            <img src="images/Deer/back.jpeg"/>
-  
-            <div class="animal-dots">
-              <div class="animal-dot active" data-idx="0"></div>
-              <div class="animal-dot" data-idx="1"></div>
-              <div class="animal-dot" data-idx="2"></div>
-              <div class="animal-dot" data-idx="3"></div>
-              <div class="animal-dot" data-idx="4"></div>
-            </div>
-          </div>
-          <div class="animal-name">🦌 Deer </div>
-          <div class="animal-desc">Medium Velvet Yarn, weighted</div>
-        </div>
-
-        <!-- OWL -->
-        <div class="animal-card">
-          <div class="animal-img-area">
-            <img src="images/Owl/front.jpeg" class="active"/>
-            <img src="images/Owl/left.jpeg"/>
-            <img src="images/Owl/right.jpeg"/>
-            <img src="images/Owl/back.jpeg"/>
-            <img src="images/Owl/close.jpeg"/>
-  
-            <div class="animal-dots">
-              <div class="animal-dot active" data-idx="0"></div>
-              <div class="animal-dot" data-idx="1"></div>
-              <div class="animal-dot" data-idx="2"></div>
-              <div class="animal-dot" data-idx="3"></div>
-              <div class="animal-dot" data-idx="4"></div>
-            </div>
-          </div>
-          <div class="animal-name">🦉 Owl </div>
-          <div class="animal-desc">Medium Velvet Yarn, weighted</div>
-        </div>
-
-        <!-- BASS -->
-        <div class="animal-card">
-          <div class="animal-img-area">
-            <img src="images/Bass/Front bass 2.jpeg" class="active"/>
-            <img src="images/Bass/Left bass 2.jpeg"/>
-            <img src="images/Bass/Right bass 2.jpeg"/>
-            <img src="images/Bass/Two bass 2.jpeg"/>
-  
-            <div class="animal-dots">
-              <div class="animal-dot active" data-idx="0"></div>
-              <div class="animal-dot" data-idx="1"></div>
-              <div class="animal-dot" data-idx="2"></div>
-              <div class="animal-dot" data-idx="3"></div>
-            </div>
-          </div>
-          <div class="animal-name">🐟 Bass </div>
-          <div class="animal-desc">Medium Velvet Yarn, non-weighted</div>
-        </div>
-
-        <!-- YODA -->
-        <div class="animal-card">
-          <div class="animal-img-area">
-            <img src="images/Yoda/IMG_3167 Large.jpeg" class="active"/>
-            <img src="images/Yoda/IMG_3170 Large.jpeg"/>
-  
-            <div class="animal-dots">
-              <div class="animal-dot active" data-idx="0"></div>
-              <div class="animal-dot" data-idx="1"></div>
-            </div>
-          </div>
-          <div class="animal-name">👽 Grogu </div>
-          <div class="animal-desc">Medium Velvet Yarn, non-weighted</div>
-        </div>
-
-        <!-- DUCK -->
-        <div class="animal-card">
-          <div class="animal-img-area">
-            <img src="images/duck/IMG_4621 Large.jpeg" class="active"/>
-            <img src="images/duck/IMG_4622 Large.jpeg"/>
-            <img src="images/duck/IMG_4624 Large.jpeg"/>
-  
-            <div class="animal-dots">
-              <div class="animal-dot active" data-idx="0"></div>
-              <div class="animal-dot" data-idx="1"></div>
-              <div class="animal-dot" data-idx="1"></div>
-            </div>
-          </div>
-          <div class="animal-name">🦆 Duck </div>
-          <div class="animal-desc">Small Velvet Yarn, non-weighted</div>
-        </div>
-
-        <!-- REINDEER -->
-        <div class="animal-card">
-          <div class="animal-img-area">
-            <img src="images/Reindeer/Front.jpeg" alt="Reindeer front" class="active" />
-            <img src="images/Reindeer/Left.jpeg" alt="Reindeer left side" />
-            <img src="images/Reindeer/Right.jpeg" alt="Reindeer right side" />
-            <img src="images/Reindeer/Back.jpeg" alt="Reindeer back" />
- 
-            <div class="animal-dots">
-              <div class="animal-dot active" data-idx="0"></div>
-              <div class="animal-dot" data-idx="1"></div>
-              <div class="animal-dot" data-idx="2"></div>
-              <div class="animal-dot" data-idx="3"></div>
-            </div>
-          </div>
-          <div class="animal-name">🦌 Reindeer</div>
-          <div class="animal-desc">Medium Basic Yarn, weighted</div>
-        </div>
- 
-        <!-- SNOWMAN -->
-        <div class="animal-card">
-          <div class="animal-img-area">
-            <img src="images/Snowman/Front.jpeg" alt="Snowman front" class="active" />
-            <img src="images/Snowman/Left.jpeg" alt="Snowman left side" />
-            <img src="images/Snowman/Right.jpeg" alt="Snowman right side" />
-            <img src="images/Snowman/Closeup.jpeg" alt="Snowman closeup" />
-            <div class="animal-dots">
-              <div class="animal-dot active" data-idx="0"></div>
-              <div class="animal-dot" data-idx="1"></div>
-              <div class="animal-dot" data-idx="2"></div>
-              <div class="animal-dot" data-idx="3"></div>
-            </div>
-          </div>
-          <div class="animal-name">⛄ Snowman</div>
-          <div class="animal-desc">Medium Basic Yarn, weighted</div>
-        </div>
-
-      </div><!-- /animal-gallery -->
-
-      <button class="show-more-btn" id="showMoreBtn">
-        Show More Creations
-      </button>
- 
+    <!-- MORE CREATION IDEAS -->
     <div class="more-creations reveal">
-      <p class="creations-subtitle2">Don't see what you're looking for? Here are a few other creations I've been wanting to try! Feel free to suggest a different animal or idea if it isn't listed</p>
+      <p class="creations-subtitle2">
+        Don't see what you're looking for?
+        Here are a few other creations I've been wanting to try!
+        Feel free to suggest a different animal or idea if it isn't listed.
+      </p>
       <div class="more-content reveal-stagger">
         <div class="creation-pill">🦋 Butterfly</div>
         <div class="creation-pill">🐋 Whale</div>
@@ -514,7 +118,6 @@
         <div class="creation-pill">🦖 Dinosaur</div>
       </div>
     </div>
- 
   </section>
  
   <!-- ══ PRICING ══ -->
@@ -552,7 +155,6 @@
       <div class="addon-pill">🧶 Crocheted Bow <span class="addon-price">+$2</span></div>
       <div class="addon-pill">🎀 Ribbon Bow x2 <span class="addon-price">+$2</span></div>
       <div class="addon-pill">🪡 Fabric Lining (ears, feet, bows) <span class="addon-price">+$5</span></div>
-    </div>
     </div>
   </section>
  
@@ -710,86 +312,8 @@
       with questions or concerns
     </p>
   </footer>
- 
+
   <script>
-  // ── CREATIONS GALLERY ──
-
-  const galleryCards = document.querySelectorAll(
-    '#animalGallery .animal-card'
-  );
-
-  const showMoreBtn = document.getElementById('showMoreBtn');
-
-  const INITIAL_VISIBLE = 6;
-
-  let galleryExpanded = false;
-
-
-  // Hide everything after the first 9 cards
-  galleryCards.forEach((card, index) => {
-
-    if (index >= INITIAL_VISIBLE) {
-      card.classList.add('gallery-hidden');
-    }
-
-  });
-
-
-  // Hide button if there aren't enough creations
-  if (galleryCards.length <= INITIAL_VISIBLE) {
-    showMoreBtn.style.display = 'none';
-  }
-
-
-  showMoreBtn.addEventListener('click', () => {
-
-  galleryExpanded = !galleryExpanded;
-
-  galleryCards.forEach((card, index) => {
-
-    if (index >= INITIAL_VISIBLE) {
-      card.classList.toggle(
-        'gallery-hidden',
-        !galleryExpanded
-      );
-    }
-
-  });
-
-  showMoreBtn.textContent = galleryExpanded
-    ? 'Show Less'
-    : 'Show More Creations';
-
-
-  // When clicking "Show Less", scroll back to Creations
-  if (!galleryExpanded) {
-
-    document.getElementById('creations').scrollIntoView({
-      behavior: 'smooth',
-      block: 'start'
-    });
-
-  }
-
-  });
- 
- 
-    // ── PER-ANIMAL IMAGE DOTS ──
-    document.querySelectorAll('.animal-img-area').forEach(area => {
-      const imgs = area.querySelectorAll('img');
-      const dots = area.querySelectorAll('.animal-dot');
- 
-      dots.forEach(dot => {
-        dot.addEventListener('click', () => {
-          const idx = parseInt(dot.dataset.idx);
-          imgs.forEach(i => i.classList.remove('active'));
-          dots.forEach(d => d.classList.remove('active'));
-          imgs[idx].classList.add('active');
-          dot.classList.add('active');
-        });
-      });
-    });
- 
     // ── SCROLL REVEAL ──
     const revealEls = document.querySelectorAll('.reveal, .reveal-stagger');
  
@@ -807,6 +331,8 @@
  
     revealEls.forEach(el => revealObserver.observe(el));
   </script>
+
+  <script src="js/creations.js"></script>
  
   <a href="#order" class="floating-order-btn">
     🧶 Order Now!

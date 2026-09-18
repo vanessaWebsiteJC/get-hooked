@@ -1,0 +1,146 @@
+/* ── CREATION FILTERS ── */
+
+.creation-filters {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 48px;
+  
+    margin: 0 auto 38px;
+    padding: 20px 28px;
+  
+    width: fit-content;
+    max-width: 100%;
+  
+    background: rgba(255, 255, 255, 0.65);
+    border-radius: 22px;
+  
+    box-shadow: 0 6px 24px rgba(137, 174, 212, 0.10);
+  }
+  
+  
+  /* Each filter section */
+  
+  .filter-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  
+  /* Yarn / Collection heading */
+  
+  .filter-label {
+    font-family: 'Nunito', sans-serif;
+    font-size: 0.78rem;
+    font-weight: 700;
+  
+    color: var(--soft);
+  
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+  }
+  
+  
+  /* Button container */
+  
+  .filter-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+  }
+  
+  
+  /* Individual buttons */
+  
+  .filter-btn {
+    border: none;
+  
+    padding: 9px 18px;
+  
+    border-radius: 999px;
+  
+    background: var(--cream);
+  
+    color: var(--text);
+  
+    font-family: 'Nunito', sans-serif;
+    font-size: 0.88rem;
+    font-weight: 600;
+  
+    cursor: pointer;
+  
+    box-shadow: inset 0 0 0 1px rgba(137, 174, 212, 0.25);
+  
+    transition:
+      background 0.2s ease,
+      color 0.2s ease,
+      transform 0.2s ease,
+      box-shadow 0.2s ease;
+  }
+  
+  
+  /* Hover */
+  
+  .filter-btn:hover {
+    transform: translateY(-2px);
+  
+    background: white;
+  
+    box-shadow:
+      inset 0 0 0 1.5px var(--blue),
+      0 4px 10px rgba(137, 174, 212, 0.12);
+  }
+  
+  
+  /* Selected filter */
+  
+  .filter-btn.active {
+    background: var(--blue);
+    color: white;
+  
+    box-shadow:
+      0 4px 12px rgba(137, 174, 212, 0.25);
+  }
+  
+  
+  /* Don't move selected button on hover */
+  
+  .filter-btn.active:hover {
+    transform: none;
+    background: var(--blue);
+  }
+  
+  
+  /* ── MOBILE ── */
+  
+  @media (max-width: 650px) {
+  
+    .creation-filters {
+      width: 100%;
+  
+      flex-direction: column;
+      align-items: center;
+  
+      gap: 20px;
+  
+      padding: 20px 16px;
+      margin-bottom: 30px;
+    }
+  
+    .filter-group {
+      width: 100%;
+    }
+  
+    .filter-buttons {
+      width: 100%;
+    }
+  
+    .filter-btn {
+      padding: 8px 14px;
+      font-size: 0.84rem;
+    }
+  
+  }

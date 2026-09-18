@@ -1,0 +1,322 @@
+[
+    {
+      "name": "Velvet Bunnies",
+      "emoji": "🐰",
+      "description": "Medium Velvet Yarn, Non-weighted",
+      "yarn": "velvet",
+      "collection": "animals",
+      "images": [
+        "images/velvetBunnies/all.jpeg",
+        "images/velvetBunnies/Front.jpeg",
+        "images/velvetBunnies/yellow.jpeg",
+        "images/velvetBunnies/Side.jpeg",
+        "images/velvetBunnies/Closeup.jpeg",
+        "images/velvetBunnies/Lined.jpeg",
+        "images/velvetBunnies/Ear.jpeg"
+      ]
+    },
+  
+    {
+      "name": "Velvet Bear",
+      "emoji": "🐻",
+      "description": "Medium Velvet Yarn, Non-weighted",
+      "yarn": "velvet",
+      "collection": "animals",
+      "images": [
+        "images/VelvetBear/front.jpeg",
+        "images/VelvetBear/left.jpeg",
+        "images/VelvetBear/right.jpeg",
+        "images/VelvetBear/back.jpeg"
+      ]
+    },
+  
+    {
+      "name": "Club Covers",
+      "emoji": "⛳️",
+      "description": "Custom Basic Yarn",
+      "yarn": "basic",
+      "collection": "other",
+      "images": [
+        "images/Golf Club Covers/clubs.jpeg",
+        "images/Golf Club Covers/oakley.jpeg",
+        "images/Golf Club Covers/otter.jpeg",
+        "images/Golf Club Covers/dogFront.jpeg",
+        "images/Golf Club Covers/dogLeft.jpeg",
+        "images/Golf Club Covers/dogRight.jpeg"
+      ]
+    },
+  
+    {
+      "name": "Turtle",
+      "emoji": "🐢",
+      "description": "Medium Velvet Yarn, Non-weighted",
+      "yarn": "velvet",
+      "collection": "animals",
+      "images": [
+        "images/Turtle/two.jpeg",
+        "images/Turtle/brown.jpeg",
+        "images/Turtle/green.jpeg",
+        "images/Turtle/close.jpeg"
+      ]
+    },
+  
+    {
+      "name": "Fluffy Bear",
+      "emoji": "🧸",
+      "description": "Medium Fluffy Yarn, Weighted",
+      "yarn": "fluffy",
+      "collection": "animals",
+      "images": [
+        "images/FluffyBear/Front.jpeg",
+        "images/FluffyBear/Left.jpeg",
+        "images/FluffyBear/Right.jpeg",
+        "images/FluffyBear/Face.jpeg",
+        "images/FluffyBear/Foot.jpeg"
+      ]
+    },
+  
+    {
+      "name": "Mermaid",
+      "emoji": "🧜‍♀️",
+      "description": "Medium Basic Yarn, Non-weighted",
+      "yarn": "basic",
+      "collection": "other",
+      "images": [
+        "images/Mermaid/front.jpeg",
+        "images/Mermaid/side.jpeg",
+        "images/Mermaid/back.jpeg",
+        "images/Mermaid/laying.jpeg",
+        "images/Mermaid/fish.jpeg"
+      ]
+    },
+  
+    {
+      "name": "Bunny",
+      "emoji": "🐇",
+      "description": "Medium Basic Yarn, Weighted",
+      "yarn": "basic",
+      "collection": "animals",
+      "images": [
+        "images/Bunny/Front.jpeg",
+        "images/Bunny/Left.jpeg",
+        "images/Bunny/Right.jpeg",
+        "images/Bunny/Flowers.jpeg",
+        "images/Bunny/Bow.jpeg",
+        "images/Bunny/Closeup.jpeg",
+        "images/Bunny/2Front.jpeg",
+        "images/Bunny/2Back.jpeg"
+      ]
+    },
+  
+    {
+      "name": "Flowers",
+      "emoji": "🌸",
+      "description": "Basic Yarn",
+      "yarn": "basic",
+      "collection": "other",
+      "images": [
+        "images/Flowers/Boquet.jpeg",
+        "images/Flowers/BigRose.jpeg",
+        "images/Flowers/HoneySuckle.jpeg",
+        "images/Flowers/Lily&Baby.jpeg",
+        "images/Flowers/Lily.jpeg",
+        "images/Flowers/Orchid.jpeg",
+        "images/Flowers/PinkRose.jpeg",
+        "images/Flowers/White.jpeg"
+      ]
+    },
+  
+    {
+      "name": "Lion",
+      "emoji": "🦁",
+      "description": "Medium Basic Yarn, Weighted",
+      "yarn": "basic",
+      "collection": "animals",
+      "images": [
+        "images/Lion/front.jpeg",
+        "images/Lion/left.jpeg",
+        "images/Lion/right.jpeg",
+        "images/Lion/back.jpeg"
+      ]
+    },
+  
+    {
+      "name": "Hippo",
+      "emoji": "🦛",
+      "description": "Medium Basic Yarn, Weighted",
+      "yarn": "basic",
+      "collection": "animals",
+      "images": [
+        "images/Hippo/Front.jpeg",
+        "images/Hippo/Left.jpeg",
+        "images/Hippo/Right.jpeg",
+        "images/Hippo/Back.jpeg"
+      ]
+    },
+  
+    {
+      "name": "Bear",
+      "emoji": "🐻",
+      "description": "Medium Basic Yarn, Weighted",
+      "yarn": "basic",
+      "collection": "animals",
+      "images": [
+        "images/Bear/front.jpeg",
+        "images/Bear/left.jpeg",
+        "images/Bear/right.jpeg"
+      ]
+    },
+  
+    {
+      "name": "Horse",
+      "emoji": "🐴",
+      "description": "Medium Basic Yarn, Weighted",
+      "yarn": "basic",
+      "collection": "animals",
+      "images": [
+        "images/Horse/Front.jpeg",
+        "images/Horse/Left.jpeg"
+      ]
+    },
+  
+    {
+      "name": "Giraffe & Cat",
+      "emoji": "🦒🐱",
+      "description": "Medium Basic Yarn, Weighted",
+      "yarn": "basic",
+      "collection": "animals",
+      "images": [
+        "images/giraffe&cat/front.jpeg",
+        "images/giraffe&cat/left.jpeg",
+        "images/giraffe&cat/back.jpeg",
+        "images/giraffe&cat/cat.jpeg",
+        "images/giraffe&cat/giraffe.jpeg"
+      ]
+    },
+  
+    {
+      "name": "Dog",
+      "emoji": "🐶",
+      "description": "Medium Fluffy Yarn, Weighted",
+      "yarn": "fluffy",
+      "collection": "animals",
+      "images": [
+        "images/Dog/front.jpeg",
+        "images/Dog/left.jpeg",
+        "images/Dog/right.jpeg",
+        "images/Dog/fluffyRight.jpeg",
+        "images/Dog/fluffyLeft.jpeg"
+      ]
+    },
+  
+    {
+      "name": "Lamb",
+      "emoji": "🐑",
+      "description": "Medium Velvet Yarn, Weighted",
+      "yarn": "velvet",
+      "collection": "animals",
+      "images": [
+        "images/Lamb/front.jpeg",
+        "images/Lamb/left.jpeg",
+        "images/Lamb/right.jpeg",
+        "images/Lamb/back.jpeg"
+      ]
+    },
+  
+    {
+      "name": "Deer",
+      "emoji": "🦌",
+      "description": "Medium Velvet Yarn, Weighted",
+      "yarn": "velvet",
+      "collection": "animals",
+      "images": [
+        "images/Deer/front.jpeg",
+        "images/Deer/face.jpeg",
+        "images/Deer/left.jpeg",
+        "images/Deer/right.jpeg",
+        "images/Deer/back.jpeg"
+      ]
+    },
+  
+    {
+      "name": "Owl",
+      "emoji": "🦉",
+      "description": "Medium Velvet Yarn, Weighted",
+      "yarn": "velvet",
+      "collection": "animals",
+      "images": [
+        "images/Owl/front.jpeg",
+        "images/Owl/left.jpeg",
+        "images/Owl/right.jpeg",
+        "images/Owl/back.jpeg",
+        "images/Owl/close.jpeg"
+      ]
+    },
+  
+    {
+      "name": "Bass",
+      "emoji": "🐟",
+      "description": "Medium Velvet Yarn, Non-weighted",
+      "yarn": "velvet",
+      "collection": "animals",
+      "images": [
+        "images/Bass/Front bass 2.jpeg",
+        "images/Bass/Left bass 2.jpeg",
+        "images/Bass/Right bass 2.jpeg",
+        "images/Bass/Two bass 2.jpeg"
+      ]
+    },
+  
+    {
+      "name": "Grogu",
+      "emoji": "👽",
+      "description": "Medium Velvet Yarn, Non-weighted",
+      "yarn": "velvet",
+      "collection": "other",
+      "images": [
+        "images/Yoda/IMG_3167 Large.jpeg",
+        "images/Yoda/IMG_3170 Large.jpeg"
+      ]
+    },
+  
+    {
+      "name": "Duck",
+      "emoji": "🦆",
+      "description": "Small Velvet Yarn, Non-weighted",
+      "yarn": "velvet",
+      "collection": "animals",
+      "images": [
+        "images/duck/IMG_4621 Large.jpeg",
+        "images/duck/IMG_4622 Large.jpeg",
+        "images/duck/IMG_4624 Large.jpeg"
+      ]
+    },
+  
+    {
+      "name": "Reindeer",
+      "emoji": "🦌",
+      "description": "Medium Basic Yarn, Weighted",
+      "yarn": "basic",
+      "collection": "seasonal",
+      "images": [
+        "images/Reindeer/Front.jpeg",
+        "images/Reindeer/Left.jpeg",
+        "images/Reindeer/Right.jpeg",
+        "images/Reindeer/Back.jpeg"
+      ]
+    },
+  
+    {
+      "name": "Snowman",
+      "emoji": "⛄",
+      "description": "Medium Basic Yarn, Weighted",
+      "yarn": "basic",
+      "collection": "seasonal",
+      "images": [
+        "images/Snowman/Front.jpeg",
+        "images/Snowman/Left.jpeg",
+        "images/Snowman/Right.jpeg",
+        "images/Snowman/Closeup.jpeg"
+      ]
+    }
+]
