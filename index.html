@@ -52,10 +52,11 @@
   <section class="creations" id="creations">
     <p class="section-label">My Work</p>
     <h2 class="section-title">Crocheted Creations</h2>
-    <p class="creations-subtitle">Click the dots to see different angles and details of each creation, and use the arrows to browse through different creations!</p>
- 
-    <div class="animal-track-wrapper reveal" id="animalWrapper">
-      <div class="animal-track" id="animalTrack">
+    <p class="creations-subtitle">
+      Browse some of my recent creations! Click the dots to see different angles and details of each piece.
+    </p>
+    
+    <div class="animal-gallery reveal" id="animalGallery">
  
         <!-- VELVET BUNNIES -->
         <div class="animal-card">
@@ -497,13 +498,11 @@
           <div class="animal-desc">Medium Basic Yarn, weighted</div>
         </div>
 
-      </div><!-- /track -->
-    </div><!-- /wrapper -->
- 
-    <div class="carousel-nav">
-      <button class="carousel-btn" id="prevBtn" disabled>&#8592;</button>
-      <button class="carousel-btn" id="nextBtn">&#8594;</button>
-    </div>
+      </div><!-- /animal-gallery -->
+
+      <button class="show-more-btn" id="showMoreBtn">
+        Show More Creations
+      </button>
  
     <div class="more-creations reveal">
       <p class="creations-subtitle2">Don't see what you're looking for? Here are a few other creations I've been wanting to try! Feel free to suggest a different animal or idea if it isn't listed</p>
@@ -511,12 +510,8 @@
         <div class="creation-pill">🦋 Butterfly</div>
         <div class="creation-pill">🐋 Whale</div>
         <div class="creation-pill">🪼 Jellyfish</div>
-        <div class="creation-pill">🐟 Fish</div>
-        <div class="creation-pill">🦒 Giraffe</div>
         <div class="creation-pill">🐘 Elephant</div>
-        <div class="creation-pill">🦆 Duck</div>
         <div class="creation-pill">🦖 Dinosaur</div>
-        <div class="creation-pill">⛳ Golf Headcovers</div>
       </div>
     </div>
  
@@ -717,50 +712,66 @@
   </footer>
  
   <script>
-    // ── ANIMAL CAROUSEL (left/right arrows) ──
-    const track = document.getElementById('animalTrack');
-    const prevBtn = document.getElementById('prevBtn');
-    const nextBtn = document.getElementById('nextBtn');
- 
-    let currentOffset = 0;
-    const totalAnimals = document.querySelectorAll('.animal-card').length;
-    const visibleCount = () => window.innerWidth <= 520 ? 1 : window.innerWidth <= 768 ? 2 : 3;
-    const maxOffset = () => totalAnimals - visibleCount();
- 
-    function updateTrack() {
-      const cards = track.querySelectorAll('.animal-card');
-      const cardWidth = cards[0].offsetWidth;
-      const gap = 24;
-      track.style.transform = `translateX(-${currentOffset * (cardWidth + gap)}px)`;
-      prevBtn.disabled = currentOffset === 0;
-      nextBtn.disabled = currentOffset >= maxOffset();
+  // ── CREATIONS GALLERY ──
+
+  const galleryCards = document.querySelectorAll(
+    '#animalGallery .animal-card'
+  );
+
+  const showMoreBtn = document.getElementById('showMoreBtn');
+
+  const INITIAL_VISIBLE = 6;
+
+  let galleryExpanded = false;
+
+
+  // Hide everything after the first 9 cards
+  galleryCards.forEach((card, index) => {
+
+    if (index >= INITIAL_VISIBLE) {
+      card.classList.add('gallery-hidden');
     }
- 
-    prevBtn.addEventListener('click', () => { if (currentOffset > 0) { currentOffset--; updateTrack(); } });
-    nextBtn.addEventListener('click', () => { if (currentOffset < maxOffset()) { currentOffset++; updateTrack(); } });
-    window.addEventListener('resize', () => { currentOffset = Math.min(currentOffset, maxOffset()); updateTrack(); });
- 
-    // ── SWIPE SUPPORT ──
-    let touchStartX = 0;
-    let touchEndX = 0;
- 
-    track.addEventListener('touchstart', (e) => {
-      touchStartX = e.changedTouches[0].screenX;
-    }, { passive: true });
- 
-    track.addEventListener('touchend', (e) => {
-      touchEndX = e.changedTouches[0].screenX;
-      const diff = touchStartX - touchEndX;
-      if (Math.abs(diff) > 40) { // min swipe distance in px
-        if (diff > 0 && currentOffset < maxOffset()) {
-          currentOffset++;
-          updateTrack();
-        } else if (diff < 0 && currentOffset > 0) {
-          currentOffset--;
-          updateTrack();
-        }
-      }
-    }, { passive: true });
+
+  });
+
+
+  // Hide button if there aren't enough creations
+  if (galleryCards.length <= INITIAL_VISIBLE) {
+    showMoreBtn.style.display = 'none';
+  }
+
+
+  showMoreBtn.addEventListener('click', () => {
+
+  galleryExpanded = !galleryExpanded;
+
+  galleryCards.forEach((card, index) => {
+
+    if (index >= INITIAL_VISIBLE) {
+      card.classList.toggle(
+        'gallery-hidden',
+        !galleryExpanded
+      );
+    }
+
+  });
+
+  showMoreBtn.textContent = galleryExpanded
+    ? 'Show Less'
+    : 'Show More Creations';
+
+
+  // When clicking "Show Less", scroll back to Creations
+  if (!galleryExpanded) {
+
+    document.getElementById('creations').scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    });
+
+  }
+
+  });
  
  
     // ── PER-ANIMAL IMAGE DOTS ──
